@@ -1,0 +1,118 @@
+/* General */
+body {
+    background-color: #290A45; /* Mismo fondo morado que en la pantalla de inicio de sesión */
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 600px;
+    margin: 50px auto; /* Menos margen superior para acercar el cuadro al centro */
+    padding: 30px;
+    background-color: #3C2B5C;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Título */
+h2 {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Etiquetas */
+label {
+    color: #FFFFFF; /* Color blanco para las etiquetas */
+    font-weight: 500;
+}
+
+/* Inputs y selects */
+input, select {
+    background-color: #1E0E36;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input::placeholder {
+    color: #D3D3D3;
+}
+
+/* Botones */
+.btn-success {
+    background-color: #58a700;
+    border-radius: 25px;
+    padding: 10px 0;
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    background-color: #007aff;
+    border-radius: 25px;
+    padding: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Enlaces */
+a {
+    color: #58a700;
+}
+
+a:hover {
+    color: #45a200;
+    text-decoration: underline;
+}
+
+/* Texto de advertencia */
+h7 {
+    font-size: 0.8rem;
+    color: #9A82C4;
+}
+
+/* Responsivo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Se adapta a pantallas más pequeñas como las de celulares */
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px; /* Reducir espacio debajo del título */
+    }
+
+    input, select {
+        font-size: 0.9rem;
+    }
+
+    .btn-success, .btn-primary {
+        font-size: 1rem;
+        padding: 8px 0;
+    }
+}
+
+/* Ajustes adicionales para pantallas muy pequeñas */
+@media (max-width: 400px) {
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    input, select {
+        font-size: 0.8rem;
+    }
+
+    .btn-success, .btn-primary {
+        font-size: 0.9rem;
+        padding: 6px 0;
+    }
+}

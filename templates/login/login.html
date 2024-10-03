@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matplay</title>
+    <!-- Importar Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Enlace a tu CSS personalizado -->
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container-fluid position-relative">
+        <!-- Logo en la esquina superior izquierda -->
+        <img src="{% static 'img/logo.png' %}" alt="Logo Matplay" class="logo">
+
+        <!-- Fila para el contenido principal: imagen y texto -->
+        <div class="row align-items-center w-100 h-100">
+            <div class="col-md-6 text-center">
+                <!-- Aquí irá el gif en lugar de la imagen estática -->
+                <img src="{% static 'img/tugif.gif' %}" alt="Imagen GIF" class="img-fluid main-image">
+            </div>
+
+            <div class="col-md-6 text-section text-right">
+                <h1 class="display-4 font-weight-bold">¡La forma divertida, efectiva y gratis de aprender!</h1>
+
+                <!-- Botones -->
+                <div class="mt-4 d-flex flex-column align-items-end">
+                    <a href="{% url 'registro' %}" class="btn btn-custom-success btn-lg mb-3">Empieza Ahora</a>
+                    <a href="{% url 'iniciar_sesion' %}" class="btn btn-custom-outline btn-lg">Ya Tengo una Cuenta</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
