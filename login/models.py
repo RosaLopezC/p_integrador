@@ -15,12 +15,12 @@ class Nivel_academico(models.Model):
     nombre = models.CharField(max_length=40)
 
 class Grado (models.Model):
-    nivel_academico = models.ForeignKey(Nivel_academico,models.SET_NULL)
+    nivel_academico = models.ForeignKey(Nivel_academico,models.PROTECT)
     nombre_grado = models.CharField(max_length=50)
 
 class Curso(models.Model):
     titulo = models.CharField(max_length=50)
-    grado = models.ForeignKey(Grado,on_delete=models.SET_NULL)
+    grado = models.ForeignKey(Grado,on_delete=models.PROTECT)
 
 class Tema(models.Model):
     titulo = models.CharField(max_length=200)
@@ -32,7 +32,7 @@ class Dificultades(models.Model):
 class Leccion(models.Model):
     titulo = models.CharField(max_length=200)
     descripcion = models.CharField(max_length= 500)
-    nivel_dificultad = models.ForeignKey(Dificultades,on_delete=models.SET_NULL) #CAMBIAR
+    nivel_dificultad = models.ForeignKey(Dificultades,on_delete=models.PROTECT) #CAMBIAR
     tema = models.ForeignKey(Tema,on_delete=models.CASCADE)
     puntos_obtenidos = models.DecimalField(max_digits=4,decimal_places=2)
     orden = models.IntegerField()
