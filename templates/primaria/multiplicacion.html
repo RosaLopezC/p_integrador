@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathplay - Multiplicación</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/contenido.css' %}">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>La Multiplicación</h1>
+        <img src="{% static 'img/multiplicacion.jpeg' %}" alt="Multiplicación" class="img-fluid mb-4">
+        <p>¡Aprende a multiplicar de una manera divertida! La multiplicación es una de las operaciones matemáticas más útiles, ya que nos permite sumar un número muchas veces.</p>
+
+        <h2>¿Qué es la multiplicación?</h2>
+        <p>La multiplicación es una manera rápida de sumar el mismo número varias veces. En lugar de sumar 3 + 3 + 3, simplemente podemos decir que 3 multiplicado por 3 es igual a 9. Es mucho más rápido, ¿verdad?</p>
+
+        <div class="example">
+            <img src="{% static 'img/ejemplo_multiplicacion.png' %}" alt="Ejemplo de Multiplicación" class="img-fluid mb-3">
+            <p>Por ejemplo: 2 x 3 significa que sumamos 2 tres veces (2 + 2 + 2), lo que es igual a 6.</p>
+        </div>
+
+        <h2>Elementos de la multiplicación</h2>
+        <ul class="usage-list">
+            <li><strong>Factor:</strong> Son los números que multiplicamos. En 3 x 4, tanto 3 como 4 son factores.</li>
+            <li><strong>Producto:</strong> Es el resultado de la multiplicación. En 3 x 4, el producto es 12.</li>
+        </ul>
+
+        <div class="example">
+            <img src="{% static 'img/tablas_multiplicacion.png' %}" alt="Tablas de Multiplicar" class="img-fluid mb-3">
+            <p><strong>Las tablas de multiplicar:</strong> Aprender las tablas de multiplicar te ayudará a multiplicar más rápido. ¡Practícalas a diario para ser un experto en matemáticas!</p>
+        </div>
+
+        <h2>¿Por qué es importante la multiplicación?</h2>
+        <p>La multiplicación es importante porque la usamos en la vida cotidiana. Cuando compramos varias cosas, calculamos el área de una habitación o preparamos recetas, ¡siempre estamos multiplicando!</p>
+
+        <div class="summary">
+            <h3>¡Recuerda!</h3>
+            <p>La multiplicación es una herramienta poderosa que nos permite sumar rápidamente el mismo número muchas veces. Aprende bien las tablas y ¡te volverás un experto!</p>
+        </div>
+    </div>
+</body>
+</html>

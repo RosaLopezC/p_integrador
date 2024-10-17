@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathplay - Números</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/contenido.css' %}">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Números</h1>
+        <img src="{% static 'img/numero.jpg' %}" alt="Números" class="img-fluid mb-4">
+        
+        <p>¡Bienvenidos al maravilloso mundo de los números!</p>
+        <p>Los números están presentes en nuestra vida diaria. Desde contar los juguetes, las frutas que comemos, hasta los pasos que damos. Conocer los números nos ayuda a entender el mundo que nos rodea.</p>
+
+        <h2>¿Qué son los números?</h2>
+        <p>Los números son símbolos que usamos para contar, ordenar y medir. Los más básicos son los <strong>números del 1 al 10</strong>. A continuación te mostramos algunos ejemplos de cómo usamos los números:</p>
+        
+        <div class="row text-left">
+            <div class="col-md-6">
+                <h3>1. Contar objetos</h3>
+                <p>Podemos usar los números para contar objetos. Por ejemplo:</p>
+                <ul>
+                    <li>1 manzana</li>
+                    <li>2 pelotas</li>
+                    <li>3 lápices</li>
+                </ul>
+                <img src="{% static 'img/contar.jpeg' %}" alt="Contar objetos" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h3>2. Ordenar cosas</h3>
+                <p>También podemos usar los números para ordenar cosas en secuencia, como el primero, segundo y tercero.</p>
+                <img src="{% static 'img/ordenar.jpeg' %}" alt="Ordenar números" class="img-fluid">
+            </div>
+        </div>
+
+        <h2>Números en la naturaleza</h2>
+        <p>Los números están en todas partes, incluso en la naturaleza. Por ejemplo, podemos contar el número de pétalos de una flor o la cantidad de hojas en una planta.</p>
+        <img src="{% static 'img/naturaleza.jpeg' %}" alt="Números en la naturaleza" class="img-fluid mb-4">
+
+        <h2>Los números y la matemática</h2>
+        <p>Con los números, podemos hacer muchas operaciones matemáticas, como sumar, restar, multiplicar y dividir. Por ejemplo:</p>
+        <ul class="text-left">
+            <li><strong>Sumar:</strong> Si tienes 2 manzanas y te dan 1 más, ahora tienes 3 manzanas.</li>
+            <li><strong>Restar:</strong> Si tienes 3 pelotas y regalas 1, ahora te quedan 2 pelotas.</li>
+        </ul>
+        <img src="{% static 'img/suma_resta.jpeg' %}" alt="Sumar y Restar" class="img-fluid">
+
+        <h2>Curiosidades de los números</h2>
+        <p>¿Sabías que el número 7 es considerado un número especial en muchas culturas? También, el número 10 es la base del sistema de conteo que usamos, conocido como el sistema decimal.</p>
+        <img src="{% static 'img/curiosidades.jpeg' %}" alt="Curiosidades de los números" class="img-fluid mb-4">
+
+        <p>¡Los números son divertidos y muy útiles! Continúa explorando para aprender más.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

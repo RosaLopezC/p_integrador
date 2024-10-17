@@ -63,3 +63,27 @@ def iniciar_sesion(request):
 
 def menu(request):
     return render(request, 'menu/menu.html')
+
+def numeros_view(request):
+    return render(request, 'primaria/numeros.html')
+
+def sumas_restas_view(request):
+    return render(request, 'primaria/sumas_restas.html')
+
+def secuencias_view(request):
+    return render(request, 'primaria/secuencias.html')
+
+def geometria_view(request):
+    return render(request, 'primaria/geometria.html')
+
+def medidas_view(request):
+    return render(request, 'primaria/medidas.html')
+
+def fracciones_view(request):
+    return render(request, 'primaria/fracciones.html')
+
+def multiplicacion_view(request):
+    return render(request, 'primaria/multiplicacion.html')
+
+def division_view(request):
+    return render(request, 'primaria/division.html')

@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathplay - División</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/contenido.css' %}">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>¿Qué es la División?</h1>
+        <img src="{% static 'img/division.jpeg' %}" alt="División" class="img-fluid mb-4">
+        <p>La división es una operación matemática que nos permite repartir una cantidad en partes iguales. Es como cuando tienes una pizza y la divides entre amigos, ¡cada uno recibe una parte igual!</p>
+
+        <h2>Partes de la División</h2>
+        <p>La división tiene tres partes principales:</p>
+        <ul class="usage-list">
+            <li><strong>Dividendo:</strong> Es el número que vamos a dividir.</li>
+            <li><strong>Divisor:</strong> Es el número entre el cual vamos a dividir el dividendo.</li>
+            <li><strong>Cociente:</strong> Es el resultado de la división, o cuántas partes iguales tenemos.</li>
+        </ul>
+
+        <div class="example">
+            <img src="{% static 'img/partes_division.png' %}" alt="Partes de la División" class="img-fluid mb-3">
+            <p><strong>Ejemplo:</strong> Si tenemos 12 manzanas y las queremos repartir entre 4 amigos, cada uno recibirá 3 manzanas. Esto es porque 12 ÷ 4 = 3.</p>
+        </div>
+
+        <h2>Usos de la División en la Vida Diaria</h2>
+        <p>La división es útil en muchas situaciones cotidianas. Por ejemplo, si tienes 20 dulces y quieres compartirlos entre 5 amigos, puedes usar la división para saber cuántos dulces recibirá cada uno. En este caso, dividirías 20 entre 5, y el resultado sería 4 dulces para cada amigo.</p>
+
+        <div class="example">
+            <img src="{% static 'img/division_dulces.png' %}" alt="División de Dulces" class="img-fluid mb-3">
+            <p>Otro ejemplo es dividir el tiempo. Si un programa de televisión dura 60 minutos y lo divides en 4 segmentos, cada segmento durará 15 minutos (60 ÷ 4 = 15).</p>
+        </div>
+
+        <h2>Relación con la Multiplicación</h2>
+        <p>La división y la multiplicación están relacionadas. Si multiplicas el cociente por el divisor, obtienes el dividendo. Esto significa que si 12 ÷ 4 = 3, entonces 3 x 4 = 12.</p>
+
+        <div class="example">
+            <img src="{% static 'img/multiplicacion_division.png' %}" alt="Relación con la Multiplicación" class="img-fluid mb-3">
+            <p>Por ejemplo, si 20 ÷ 5 = 4, entonces 4 x 5 = 20. ¡Así puedes comprobar que la división está correcta!</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathplay - Fracciones</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/contenido.css' %}">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>¿Qué son las Fracciones?</h1>
+        <img src="{% static 'img/fracciones.jpeg' %}" alt="Fracciones" class="img-fluid mb-4">
+        <p>Las fracciones son una manera de representar una parte de un todo. Nos ayudan a dividir cosas en partes iguales. Por ejemplo, si partes una pizza en 4 trozos y tomas 1, has tomado 1/4 de la pizza.</p>
+
+        <h2>Partes de una Fracción</h2>
+        <p>Una fracción tiene dos partes principales:</p>
+        <ul class="usage-list">
+            <li><strong>Numerador:</strong> Es el número que está arriba y nos dice cuántas partes estamos tomando.</li>
+            <li><strong>Denominador:</strong> Es el número que está abajo y nos dice en cuántas partes se ha dividido el todo.</li>
+        </ul>
+        
+        <div class="example">
+            <img src="{% static 'img/partes_fraccion.png' %}" alt="Partes de una Fracción" class="img-fluid mb-3">
+            <p>Por ejemplo, en la fracción 1/4, el numerador es 1 y el denominador es 4. Esto significa que hemos tomado 1 parte de un total de 4 partes iguales.</p>
+        </div>
+
+        <h2>¿Cómo usamos las Fracciones?</h2>
+        <p>Usamos fracciones todo el tiempo, incluso sin darnos cuenta. Las fracciones nos ayudan a medir cosas como el tiempo, la comida o la distancia. Por ejemplo, si decimos que hemos recorrido 3/4 del camino, significa que hemos recorrido 3 de las 4 partes en las que hemos dividido la distancia.</p>
+
+        <div class="example">
+            <img src="{% static 'img/fraccion_tiempo.png' %}" alt="Fracciones de tiempo" class="img-fluid mb-3">
+            <p><strong>Ejemplo:</strong> Si un reloj muestra que han pasado 15 minutos, podemos decir que ha pasado 1/4 de hora, porque 15 es una parte de 60 minutos.</p>
+        </div>
+
+        <h2>Comparación de Fracciones</h2>
+        <p>Para saber cuál fracción es mayor, necesitamos comparar sus numeradores y denominadores. Por ejemplo, 1/2 es más grande que 1/3 porque 1/2 significa que dividimos algo en 2 partes grandes, mientras que 1/3 lo divide en 3 partes más pequeñas.</p>
+
+        <div class="example">
+            <img src="{% static 'img/comparar_fracciones.png' %}" alt="Comparación de Fracciones" class="img-fluid mb-3">
+            <p>En este caso, podemos ver que 1/2 de un círculo es más grande que 1/3 del mismo círculo.</p>
+        </div>
+    </div>
+</body>
+</html>

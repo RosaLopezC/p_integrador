@@ -1,0 +1,138 @@
+/* Estilo general del cuerpo */
+body {
+    background-color: #f4e3ff;  /* Un fondo suave y agradable */
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;  /* Fuente divertida para niños */
+    color: #4e3d76;  /* Texto púrpura suave */
+    padding-top: 60px;  /* Espacio para evitar que se corte la parte superior */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #fff;  /* Fondo blanco para destacar el contenido */
+    border-radius: 20px;  /* Bordes redondeados */
+    padding: 30px;  /* Espacio alrededor del contenido */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);  /* Sombra suave */
+    margin-top: 40px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.5rem;  /* Tamaño de fuente grande */
+    color: #7741db;  /* Título en púrpura vibrante */
+    margin-bottom: 30px;  /* Espacio debajo del título */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);  /* Sombra de texto suave */
+}
+
+/* Subtítulos */
+h2 {
+    font-size: 2rem;
+    color: #3b168f;  /* Un color más oscuro para subtítulos */
+    margin-top: 40px;
+}
+
+/* Párrafos */
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #5c3d99;  /* Color púrpura más suave */
+}
+
+/* Listas ordenadas */
+ol, ul {
+    font-size: 1.1rem;
+    color: #7741db;  /* Color púrpura vibrante */
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* Listas no ordenadas */
+li {
+    margin-bottom: 10px;
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Destacar imágenes */
+img:hover {
+    transform: scale(1.05);  /* Efecto de agrandamiento */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Bloque de teoría */
+.exercise {
+    background-color: #e0d1ff;  /* Fondo púrpura claro */
+    border: 2px solid #7b47ea;  /* Bordes púrpura */
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones de radio y checkbox */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #7b47ea;  /* Color del selector */
+}
+
+/* Inputs de texto */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de citas importantes */
+blockquote {
+    background-color: #fffcdd;
+    border-left: 5px solid #ffcc00;
+    padding: 20px;
+    font-style: italic;
+    color: #5c3d99;
+    margin: 30px 0;
+}
+
+/* Sombra suave en los elementos */
+.exercise:hover {
+    transform: scale(1.02);  /* Efecto de agrandamiento suave al pasar el mouse */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Títulos de secciones */
+h2 {
+    color: #ff6200;
+    font-size: 2.2rem;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    img {
+        margin-bottom: 10px;
+    }
+}

@@ -1,62 +1,132 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-}
-
-/* Header Section */
+/* Header Styling */
 .menu-header {
-    background-color: #ffffff;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
+    background-color: white; /* Fondo blanco para la parte del logo */
+    padding: 20px;
+    border-bottom: 3px solid #8a67d6; /* Añadir un borde morado en la parte inferior del header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto flotante */
 }
 
-.logo-container img {
-    width: 150px; /* Ajusta el tamaño del logo */
+.logo {
+    width: 160px; /* Ajustar el tamaño del logo */
 }
 
-/* Search Bar */
+/* Mejorar los estilos del cuadro de búsqueda */
 .search-container {
     display: flex;
+    align-items: center;
 }
 
 .search-input {
-    padding: 5px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid #8a67d6; /* Borde morado alrededor del cuadro de búsqueda */
+    width: 250px;
     margin-right: 10px;
+    color: #4e2a7f; /* Texto en morado */
 }
 
-/* Navigation Bar */
+.btn-primary {
+    background-color: #8a67d6; /* Botón morado */
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: white; /* Texto blanco */
+    transition: background-color 0.3s ease; /* Suavizar la transición */
+}
+
+.btn-primary:hover {
+    background-color: #704cbf; /* Color más oscuro al hacer hover */
+}
+
+/* Navigation Bar Styling */
 .menu-nav {
-    background-color: #4e2a7f; /* Color púrpura para el fondo del menú */
+    background-color: #8a67d6; /* Fondo morado para la barra de navegación */
     padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .nav-list {
     list-style: none;
+    display: flex;
+    gap: 20px;
     padding: 0;
     margin: 0;
 }
 
 .nav-item {
+    margin: 0 15px;
     color: white;
-    font-weight: bold;
-    padding: 10px 20px;
-    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold; /* Hacer las opciones más destacadas */
     text-decoration: none;
-    margin: 0 10px;
-    border-radius: 5px;
-    background-color: #6c63ff; /* Color para las secciones */
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease; /* Suavizar la transición de color */
 }
 
 .nav-item:hover {
-    background-color: #5a50e5; /* Color de hover para los botones */
+    color: #ffcc00; /* Cambiar color a amarillo al hacer hover */
 }
 
-.nav-item:active {
-    background-color: #4e2a7f; /* Color al hacer clic */
+/* Cards Styling */
+.cards-section .card {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Efecto de movimiento al hacer hover */
+}
+
+.cards-section .card:hover {
+    transform: translateY(-10px); /* Mover la tarjeta hacia arriba al hacer hover */
+}
+
+.card-bordered {
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(45deg, #ff6f61, #ffcc00, #8bc34a, #03a9f4, #9c27b0); /* Colores vivos para el borde */
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    color: #4e2a7f;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #8a67d6;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #704cbf;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .logo {
+        width: 120px;
+    }
+
+    .search-input {
+        width: 150px;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .nav-item {
+        font-size: 16px; /* Ajustar tamaño de fuente en pantallas más pequeñas */
+    }
 }
