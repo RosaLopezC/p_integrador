@@ -1,0 +1,7 @@
+Dependencias:
+pillow (para las imágenes)
+pip install pillow
+django oauth toolkit (para la autenticación)
+pip install django-oauth-toolkit
+django rest framework (necesario para la compatibilidad de oauth)
+pip install djangorestframework
