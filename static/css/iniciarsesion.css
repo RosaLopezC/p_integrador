@@ -1,6 +1,6 @@
 /* Fondo de la página */
 body {
-    background-color: #3d0066;  /* Fondo púrpura oscuro más suave */
+    background-color: #3d0066;  /* Fondo púrpura oscuro */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@ body {
 
 /* Cuadro del formulario */
 .container {
-    background-color: #4e2a7f; /* Suavizar el fondo del cuadro */
+    background-color: #4e2a7f; /* Fondo púrpura más suave */
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
@@ -52,7 +52,7 @@ label {
     color: #ffffff; /* Texto blanco */
 }
 
-/* Botones */
+/* Botón de iniciar sesión */
 button {
     background-color: #8a67d6; /* Botón púrpura menos intenso */
     color: #ffffff;
@@ -68,6 +68,35 @@ button {
 
 button:hover {
     background-color: #704cbf; /* Color más oscuro al hacer hover */
+}
+
+/* Botón de Google */
+.btn-google {
+    background-color: #ffffff; /* Fondo blanco para Google */
+    color: #000000; /* Texto negro */
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-google:hover {
+    background-color: #f0f0f0; /* Fondo más oscuro al hacer hover */
+}
+
+.google-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* Enlaces */

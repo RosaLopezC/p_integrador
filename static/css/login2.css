@@ -1,0 +1,80 @@
+body {
+    background-color: #2e0b4d;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 80%;
+    max-width: 300px;
+}
+
+a:hover {
+    color: white;
+    background-color: #4c2b6d;
+}
+
+.btn-primary {
+    background-color: #58a700;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+    background-color: #4d9300;
+}
+
+.container {
+    max-width: 400px;
+    background-color: #3b185f;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1, p {
+    color: #e0d5f2;
+}
+
+.btn-google {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.btn-google:hover {
+    background-color: #357ae8;
+}
+
+button {
+    background-color: #58a700;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #4d9300;
+}
