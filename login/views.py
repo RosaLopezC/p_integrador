@@ -9,12 +9,18 @@ from django.contrib.auth import authenticate, login
 def login_view(request):
     return render(request, 'login/login.html')
 
+
 def registro_view(request):
     if request.method == 'POST':
         nombre = request.POST['name']
         fecha_nacimiento = request.POST['birthdate']
         correo = request.POST['email']
         contrasena = request.POST['password']
+
+        # Verificar si ya existe un usuario con el mismo correo
+        if Usuario.objects.filter(correo=correo).exists():
+            messages.error(request, 'El correo ya está registrado. Por favor, elige otro o inicia sesión.')
+            return redirect('registro')
 
         # Cálculo de la edad
         fecha_nac = datetime.datetime.strptime(fecha_nacimiento, '%Y-%m-%d').date()
@@ -31,23 +37,29 @@ def registro_view(request):
         usuario = Usuario(nombre=nombre, fecha_nacimiento=fecha_nac, correo=correo, contrasena=contrasena, tipo_cuenta=tipo_cuenta)
         usuario.save()
 
-        return HttpResponse("Usuario registrado con éxito")
-    else:
-        return render(request, 'login/registro.html')
-    
-def iniciar_sesion_view(request):
+        messages.success(request, 'Usuario registrado con éxito')
+        return redirect('iniciar_sesion')
+
+    return render(request, 'login/registro.html')
+
+
+def iniciar_sesion(request):
     if request.method == 'POST':
-        # Obtener los datos del formulario
-        username_or_email = request.POST['username_or_email']
-        password = request.POST['password']
+        username_or_email = request.POST.get('username_or_email')
+        password = request.POST.get('password')
 
-        # Autenticación por nombre de usuario o correo electrónico
+        # Intentar autenticación con el correo o el nombre de usuario
         user = authenticate(request, username=username_or_email, password=password)
-
+        
         if user is not None:
-            login(request, user)
-            return redirect('dashboard')  # Redirigir al dashboard después de iniciar sesión
+            login(request, user)  # Iniciar sesión
+            return redirect('menu')  # Redirigir al menú si el usuario es autenticado correctamente
         else:
-            messages.error(request, 'Credenciales inválidas, por favor intenta de nuevo.')
+            messages.error(request, 'Credenciales incorrectas, intenta nuevamente.')
+            return redirect('iniciar_sesion')
 
     return render(request, 'login/iniciar_sesion.html')
+
+
+def menu(request):
+    return render(request, 'menu/menu.html')

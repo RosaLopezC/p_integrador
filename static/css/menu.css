@@ -1,0 +1,62 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+/* Header Section */
+.menu-header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo-container img {
+    width: 150px; /* Ajusta el tamaño del logo */
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+}
+
+.search-input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Navigation Bar */
+.menu-nav {
+    background-color: #4e2a7f; /* Color púrpura para el fondo del menú */
+    padding: 15px 0;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #6c63ff; /* Color para las secciones */
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: #5a50e5; /* Color de hover para los botones */
+}
+
+.nav-item:active {
+    background-color: #4e2a7f; /* Color al hacer clic */
+}
